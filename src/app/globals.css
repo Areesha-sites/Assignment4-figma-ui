@@ -10,15 +10,6 @@
   --customBlue: #21243D;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --customPink: #F98585;
-    --customBlue: #21243D;
-  }
-} */
-
 body {
   color: var(--foreground);
   background: var(--background);
