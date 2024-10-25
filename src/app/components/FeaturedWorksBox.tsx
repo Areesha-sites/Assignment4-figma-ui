@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-const FeaturedWorksBox = ({ href }: any) => {
+import { FeautreWorkBoxType } from "../../../types/componentsTypes";
+const FeaturedWorksBox = ({ href }: FeautreWorkBoxType) => {
   return (
     <>
       <div className="lg:flex lg:flex-row lg:items-center lg:justify-center lg:mt-[1rem] lg:mb-[-2rem] lg:ml-[-0.7rem] xs:flex xs:flex-col xs:ml-[3rem] md:flex md:flex-row">
