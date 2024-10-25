@@ -6,13 +6,7 @@ const FeaturedWorksBox = ({ href }: FeautreWorkBoxType) => {
     <>
       <div className="lg:flex lg:flex-row lg:items-center lg:justify-center lg:mt-[1rem] lg:mb-[-2rem] lg:ml-[-0.7rem] xs:flex xs:flex-col xs:ml-[3rem] md:flex md:flex-row">
         <div className="lg:w-[570px] lg:h-[230px] lg:top-[100px] lg:left-[237px] rounded-[6px] ">
-          <Image
-            src={href}
-            alt="image-1"
-            height={570}
-            width={230}
-            className=""
-          />
+          <Image src={href} alt="image-1" height={570} width={230} />
         </div>
         <div className="lg:w-[632px] lg:h-[272px] lg:relative lg:top-[18px] lg:left-[-15rem] md:relative md:left-[2rem] md:top-[-18px] md:mr-[2rem] lg:mr-0 xs:mr-0">
           <h1 className="font-heebo lg:text-[30px] font-bold lg:leading-[44px] xs:text-[22px] xs:mt-[1rem] lg:mt-[0rem]">
