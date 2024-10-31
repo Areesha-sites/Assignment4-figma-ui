@@ -25,7 +25,7 @@ const Hero = () => {
         </div>
 
         <div className="relative flex justify-center items-center">
-          <div className="absolute bg-[#AA9F9F4F] lg:size-[250px] sm:size-[200px] size-[200px] -z-10 rounded-full lg:left-[5.2rem] lg:top-[3.2rem] -bottom-2 xs:absolute xs:left-[3.4rem] xs:top-[0.3rem] xsm:absolute xsm:left-[6.7rem] xsm:top-[0.5rem] sm:absolute sm:left-[5rem] md:size-[200px] md:absolute md:left-[17.3rem] md:top-[-0rem] xl:absolute xl:left-[8.3rem] xl:top-[30px] xl:size-[270px] ms:absolute ms:left-[4.9rem] ms:top-[7px]" />
+          <div className="absolute bg-[#AA9F9F4F] lg:size-[250px] sm:size-[200px] size-[200px] -z-10 rounded-full lg:left-[5.2rem] lg:top-[3.2rem] -bottom-2 xs:absolute xs:left-[3.4rem] xs:top-[0.3rem] xsm:absolute xsm:left-[6.7rem] xsm:top-[0.5rem] sm:absolute sm:left-[5rem] md:size-[200px] md:absolute md:left-[17.3rem] md:top-[-0rem] xl:absolute xl:left-[8.3rem] xl:top-[30px] xl:size-[270px] ms:absolute ms:left-[5.8rem] ms:top-[7px]" />
           <Image
             src="/image.svg"
             alt="Hero Section Image"
