@@ -8,7 +8,7 @@ const FeaturedWorksBox = ({ href }: FeautreWorkBoxType) => {
         <div className="lg:w-[570px] lg:h-[230px] lg:top-[100px] lg:left-[237px] rounded-[6px] ">
           <Image src={href} alt="image-1" height={570} width={230} />
         </div>
-        <div className="lg:w-[632px] lg:h-[272px] lg:relative lg:top-[18px] lg:left-[-15rem] md:relative md:left-[2rem] md:top-[-18px] md:mr-[2rem] lg:mr-0 xs:mr-0 xl:relative xl:top-[20px] xl:left-[-22rem]">
+        <div className="lg:w-[632px] lg:h-[272px] lg:relative lg:top-[18px] lg:left-[-15rem] md:relative md:left-[2rem] md:top-[-18px] md:mr-[2rem] lg:mr-0 xs:mr-0 xl:relative xl:top-[20px] xl:left-[-22rem] xxl:left-[-27rem]">
           <h1 className="font-heebo lg:text-[30px] font-bold lg:leading-[44px] xs:text-[22px] xs:mt-[1rem] lg:mt-[0rem]">
             Designing Dashboards
           </h1>
