@@ -4,10 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-  --background: #CFA6A61C;
+  --background: #faf5f5;
   --foreground: #171717;
   --customPink: #F98585;
   --customBlue: #21243D;
+  --recentBackground: #f4e2e2;
+  --footerBackground: #FAF5F5;
 }
 
 body {

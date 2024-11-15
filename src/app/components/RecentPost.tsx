@@ -1,20 +1,19 @@
 import React from "react";
-import Link from "next/link";
 import RecentPostCard from "./RecentPostCard";
 const RecentPost = () => {
   return (
-    <section className="lg:w-full lg:h-[502px] xs:h-[600px] lg:absolute lg:top-[700px] xs:w-full bg-[#F4E2E2] md:w-full xsm:w-full xs:absolute xs:top-[600px] md:h-[400px]">
-      <div className="flex justify-between">
-        <p className="font-heebo lg:text-[22px] font-medium leading-[32.31px] text-black lg:relative lg:left-[50px] lg:top-[26px] xs:text-[16px] xs:relative xs:left-[40px] xs:top-[10px] xs:pb-[10px] md:relative md:top-[10px] md:left-[100px] xl:relative xl:top-[40px] xl:left-[160px] xxl:left-[242px]">
-          Recent Work
-        </p>
-        <p className="font-heebo lg:text-[19px] xs:text-[14px] font-medium leading-[32.31px] text-customPink relative left-[-178px] top-[26px] cursor-pointer hover:text-black lg:relative lg:left-[-40px] lg:top-[30px] xsm:relative xsm:left-[-50px] xsm:top-[10px] xs:relative xs:left-[-38px] xs:top-[10px] xs:pb-[10px] lg:pb-[0px] md:relative md:top-[10px] md:left-[-150px]  xl:relative xl:top-[40px] xl:left-[-175px] xxl:relative xxl:left-[-260px]">
-          <Link href="#"> View All</Link>
-        </p>
-      </div>
-      <div className="lg:flex lg:justify-center lg:gap-[4rem] lg:flex-row lg:relative lg:top-[40px] lg:mx-[3rem] xs:mx-[1rem] xs:flex xs:justify-center xs:items-center xs:flex-col xs:mt-[1rem] md:flex md:justify-center md:flex-row md:mx-[6rem] xl:flex xl:justify-center xl:gap-[2rem] xl:relative xl:top-[40px] xl:mx-[10rem] xxl:mx-[15rem]">
-        <RecentPostCard />
-        <div className="lg:ml-[1rem] xs:ml-[0rem] lg:mt-[0rem] xs:mt-[1rem] md:ml-[-2rem] md:mt-[0rem]">
+    <section className="xxl:w-[1440px] w-[1280px] h-[502px] absolute xl:top-[665px] bg-recentBackground xl:w-[1475px] xl:h-[502px] ">
+      <p className="w-[120px] h-[32px] absolute top-[26px] xxl:left-[237px] left-[133px] font-heebo text-[22px] font-[500] xl:left-[242px] xl:text-[22px]">
+        Recent Post
+      </p>
+      <p className="w-[77px] h-[32px] absolute top-[26px] xxl:left-[1125px] left-[1080px] font-heebo text-[22px] font-[500] text-customPink xl:left-[1120px] xl:text-[22px]">
+        View all
+      </p>
+      <div className="flex justify-center items-center flex-col xxl:items-start  ">
+        <div className="w-[483px] h-[356px] absolute xxl:left-[238px] left-[130px] xl:left-[242px] top-[80px]">
+          <RecentPostCard />
+        </div>
+        <div className="w-[483px] h-[356px] relative xxl:left-[763px] left-[275px] top-[78px] ">
           <RecentPostCard />
         </div>
       </div>

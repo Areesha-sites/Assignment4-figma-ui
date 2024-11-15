@@ -1,17 +1,22 @@
-import React from "react";
 import FeaturedWorksBox from "./FeaturedWorksBox";
 const FeaturedWorks = () => {
   return (
-    <section className="lg:w-full lg:h-[934.2px] lg:absolute lg:top-[1230px] lg:pl-56 xs:absolute xs:top-[1250px] xs:w-full md:absolute md:top-[1100px]">
-      <p className="font-heebo lg:text-[22px] xs:text-[17px] xs:pb-[1.5rem] font-medium leading-[32.31px] text-left text-black lg:relative left-[px] cursor-pointer lg:top-[9px] xs:ml-[3rem] lg:ml-[0rem]">
-        Featured Works
+    <div className="w-[919px] h-[934.2px] absolute xxl:left-[237px] left-[133px] xxl:top-[1246px] top-[1380px] xl:left-[242px] xl:top-[1246px] overflow-hidden">
+      <p className="w-[153px] h-[32px] font-heebo text-[22px] font-[500] mb-9 xl:text-[22px]">
+        Featured works
       </p>
-      <div className="">
-        <FeaturedWorksBox href="/image1.svg" />
-        <FeaturedWorksBox href="/image2.svg" />
-        <FeaturedWorksBox href="/image3.svg" />
+      <div>
+        <div>
+          <FeaturedWorksBox property={1310} href="/image1.svg" />
+        </div>
+        <div>
+          <FeaturedWorksBox property={1601} href="/image2.svg" />
+        </div>
+        <div>
+          <FeaturedWorksBox property={1892} href="/image3.svg" />
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 

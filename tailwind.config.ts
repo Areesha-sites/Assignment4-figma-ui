@@ -23,6 +23,8 @@ const config: Config = {
         foreground: "var(--foreground)",
         customPink: "var(--customPink)",
         customBlue: "var(--customBlue)",
+        recentBackground: "var(--recentBackground)",
+        footerBackground: "var(--footerBackground)"
       },
       fontFamily: {
         heebo: ["heebo", "serif", "sans-serif"],

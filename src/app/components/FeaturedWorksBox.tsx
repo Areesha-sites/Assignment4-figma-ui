@@ -1,30 +1,37 @@
-import React from "react";
+import { FeaturedWorkProps } from "../../../types/componentsTypes";
 import Image from "next/image";
-import { FeautreWorkBoxType } from "../../../types/componentsTypes";
-const FeaturedWorksBox = ({ href }: FeautreWorkBoxType) => {
+const FeaturedWorksBox = ({ href, property }: FeaturedWorkProps) => {
   return (
     <>
-      <div className="lg:flex lg:flex-row lg:items-center lg:gap-[13rem] lg:justify-center lg:mt-[1rem] lg:mb-[-2rem] lg:ml-[-0.7rem] xs:flex xs:flex-col xs:ml-[3rem] md:flex md:flex-row">
-        <div className="lg:w-[570px] lg:h-[230px] lg:top-[100px] lg:left-[237px] rounded-[6px] ">
-          <Image src={href} alt="image-1" height={570} width={230} />
+      <div>
+        <div className={`relative top-${property}px`}>
+          <Image
+            src={href}
+            alt="Designing Dashboard"
+            width={246}
+            height={180}
+            className="w-[246px] xxl:h-[180px] h-[188px] rounded-md"
+          />
         </div>
-        <div className="lg:w-[632px] lg:h-[272px] lg:relative lg:top-[18px] lg:left-[-15rem] md:relative md:left-[2rem] md:top-[-18px] md:mr-[2rem] lg:mr-0 xs:mr-0 xl:relative xl:top-[20px] xl:left-[-22rem] xxl:left-[-27rem]">
-          <h1 className="font-heebo lg:text-[30px] font-bold lg:leading-[44px] xs:text-[22px] xs:mt-[1rem] lg:mt-[0rem]">
-            Designing Dashboards
-          </h1>
-          <div className="flex gap-4 lg:pb-4 xs:pb-2">
-            <span className="bg-customPink text-white px-4 pt-[0px] rounded-full text-[15px] h-[20px] mt-2">
-              2020
-            </span>
-            <span className="font-heebo lg:text-[20px] font-normal lg:leading-[29px] opacity-75 lg:mt-1 xs:mt-[5px]">
+        <div className="h-[100px] relative top-[-210px] left-[256px] ">
+          <div className="w-[623.46px] h-[272.1px] absolute top-[20px] left-[20px] ">
+            <h2 className="w-[305px] h-[44px] font-heebo text-[30px] font-[700]">
+              Designing Dashboards
+            </h2>
+            <div className="w-[68px] h-[24px] absolute top-[56.1px] left-[1.46px] rounded-[50px] bg-customPink">
+              <p className=" text-white flex justify-center items-center font-heebo xxl:text-[18px] font-[700] pt-[1px]">
+                2020
+              </p>
+            </div>
+            <h5 className="w-[97px] h-[29px] absolute top-[52.1px] left-[92.46px] font-heebo text-[20px] font-[400] opacity-65 ">
               Dashboard
-            </span>
+            </h5>
+            <p className="w-[622px] h-[170px] absolute top-[102.1px] left-[1.46px] font-heebo text-[18px] font-[300]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
           </div>
-          <p className="font-heebo lg:w-[122%] xl:w-[118%] lg:text-[15px] font-light lg:leading-[26px] xs:text-[13px] lg:mr-0 xs:mr-7 lg:pb-0 xs:pb-4">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
         </div>
       </div>
     </>

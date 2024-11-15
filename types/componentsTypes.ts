@@ -1,3 +1,7 @@
 export interface FeautreWorkBoxType {
-  href: string
+  href: string 
+}
+export interface FeaturedWorkProps {
+  href: string;
+  property: number
 }

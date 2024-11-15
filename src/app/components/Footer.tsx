@@ -1,46 +1,51 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 const Footer = () => {
+  const socialIcons = [
+    {
+      link: "#",
+      imageUrl: "/fb.svg",
+    },
+    {
+      link: "#",
+      imageUrl: "/insta.svg",
+    },
+    {
+      link: "#",
+      imageUrl: "/Group.svg",
+    },
+    {
+      link: "#",
+      imageUrl: "/Linkedin.svg",
+    },
+  ];
   return (
-    <>
-      <footer className="lg:w-full lg:h-[243px] lg:absolute lg:top-[2200px] lg:pb-[-3rem] xs:absolute xs:top-[2500px] md:absolute md:top-[1700px] xsm:relative xsm:top-[2400px]">
-        <div className="lg:flex lg:justify-center lg:items-center lg:gap-[35px] lg:pr-[0rem] xs:flex xs:justify-center xs:items-center xs:gap-[20px] md:flex md:justify-center md:items-center md:gap-[25px] md:pl-[16rem] xsm:pl-[1rem] lg:pl-0 xs:pl-0 xsm:flex xsm:justify-center xsm:items-center sm:pl-[1.5rem] ms:flex ms:justify-center ms:ite ms:pl-[3rem] ">
-          <Image
-            src="/fb.svg"
-            alt="facebook-logo"
-            height={30}
-            width={30}
-            className="text-customBlue hover:scale-110 hover:transition-all hover:duration-300 hover:ease-out cursor-pointer xs:h-[20px] xs:w-[20px] lg:h-[30px] lg:w-[30px]"
-          />
-          <Image
-            src="/insta.svg"
-            alt="instagram-logo"
-            height={30}
-            width={30}
-            className="text-customBlue hover:scale-110 hover:transition-all hover:duration-300 hover:ease-out cursor-pointer xs:h-[20px] xs:w-[20px] lg:h-[30px] lg:w-[30px]"
-          />
-          <Image
-            src="/Group.svg"
-            alt="Twitter-logo"
-            height={30}
-            width={30}
-            className="text-customBlue hover:scale-110 hover:transition-all hover:duration-300 hover:ease-out cursor-pointer xs:h-[20px] xs:w-[20px] lg:h-[30px] lg:w-[30px]"
-          />
-          <Image
-            src="/Linkedin.svg"
-            alt="Twitter-logo"
-            height={30}
-            width={30}
-            className="text-customBlue hover:scale-110 hover:transition-all hover:duration-300 hover:ease-out cursor-pointer xs:h-[20px] xs:w-[20px] lg:h-[30px] lg:w-[30px]"
-          />
+    <footer className="xxl:w-[1440px] h-[243px] absolute xxl:top-[2239px] top-[2400px] left-0 ">
+      <div className="">
+        <div className="w-[354px] h-[32px] absolute xxl:left-[543px] left-[450px] xl:left-[530px]">
+          <ul className="flex justify-center items-center gap-x-12 xs:gap-6">
+            {socialIcons.map((icon, i) => (
+              <li key={i}>
+                <Link href={icon.link}>
+                  <Image
+                    src={icon.imageUrl}
+                    alt="Social Icon"
+                    width={30}
+                    height={30}
+                    className="hover:scale-105 duration-300 cursor-pointer transition-all ease-linear h-[30px] w-[30px] "
+                  />
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <p className="font-heebo font-medium text-[22px] xl:text-[22px] text-center mt-5 lg:mb-24">
+            Copyright ©2020 All rights reserved
+          </p>
         </div>
-        <p className="font-heebo lg:text-[20px] font-semibold lg:leading-[32.31px] text-center text-black lg:mt-[30px] lg:pr-[2rem] xs:text-[13px] xs:mt-[20px] xs:pr-[3rem] xs:pl-[3rem] lg:pl-0 lg:ml-[0rem] md:pl-[18rem] xsm:pl-[4rem] sm:pl-[5rem] ms:pl-[4.5rem] xxl:pl-[2rem]">
-          Copyright ©2020 All rights reserved
-        </p>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 };
 
 export default Footer;
-//styleName: secoundary-text;
