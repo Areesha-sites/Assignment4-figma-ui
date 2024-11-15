@@ -1,7 +1,6 @@
 import React from "react";
 import Hero from "./components/Hero";
 import RecentPost from "./components/RecentPost";
-import Footer from "./components/Footer";
 import FeaturedWorks from "./components/FeaturedWorks";
 const Page = () => {
   return (
@@ -9,7 +8,6 @@ const Page = () => {
       <Hero />
       <RecentPost />
       <FeaturedWorks />
-      <Footer />
     </>
   );
 };
